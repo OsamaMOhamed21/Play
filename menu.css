@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d4f7d6; /* Light green background */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Heading Styling */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Available Playgrounds Container */
+.available-playgrounds {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling */
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.playground {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playground:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.playground h3 {
+  margin-top: 0;
+  color: #34495e;
+  font-size: 24px;
+}
+
+/* Image Styling - Make images equal size */
+.playground img {
+  width: 250px; /* Set the width for all images */
+  height: 150px; /* Set the height for all images */
+  object-fit: cover; /* Ensure the image fits the box without stretching */
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Button Styling */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .playground h3 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+}
