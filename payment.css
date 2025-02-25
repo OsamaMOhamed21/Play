@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #007bff; /* Changed font color to blue */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for body */
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Heading styling */
+h1 {
+    color: #007bff; /* Blue color for the heading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: slideUp 1s ease-out; /* Added slide-up animation for the heading */
+}
+
+/* Keyframe for slide-up animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Paragraph styling */
+p {
+    color: #007bff; /* Blue color for paragraph text */
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for the paragraph */
+}
+
+/* Payment method container */
+.payment-method {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: slideUp 1s ease-out; /* Added slide-up animation to the container */
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: #007bff; /* Blue color for labels */
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in animation for labels */
+}
+
+/* Select dropdown styling */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #007bff; /* Blue font color for select options */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    animation: fadeIn 1.4s ease-in-out; /* Fade-in animation for select dropdown */
+}
+
+/* Hover effect for select dropdown */
+select:hover {
+    border-color: #007bff;
+}
+
+/* Focus effect for select dropdown */
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Option group styling */
+optgroup {
+    font-size: 1rem;
+    color: #007bff; /* Blue color for option group */
+}
+
+/* Individual option styling */
+option {
+    font-size: 1rem;
+    color: #007bff; /* Blue color for individual options */
+    padding: 10px;
+}

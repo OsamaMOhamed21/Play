@@ -1,0 +1,73 @@
+/* General styles for the body and page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Style for form labels */
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Style for input fields */
+input[type="date"], input[type="time"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="date"]:focus, input[type="time"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Style for the "Book Now" button */
+a {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #1e3a8a;
+}
